@@ -1,0 +1,132 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 40px;
+  font-size: 1.5em;
+}
+
+h4 {
+  font-weight: normal;
+  margin-bottom: 5px;
+}
+
+h1 {
+  font-weight: normal;
+  margin-top: 0;
+  margin-bottom: 40px;
+  font-size: 2em;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Form Styles */
+
+
+form {
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgb(15, 15, 15);
+  width: 1000000px;
+  max-width: 300px;
+  margin: 0 auto;
+  background: transparent;
+}
+
+label {
+  font-size: 1.2em;
+  margin-bottom: 8px;
+}
+
+/* Apply the same styles to all input elements */
+input{
+
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  font-size: 1em;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+
+select{
+  width: 1000%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  font-size: 1em;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+button {
+  background-color: #169f63;
+  color: #fff;
+  border: none;
+  font-size: 1.2em;
+  padding: 10px 15px;
+  margin-top: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+
+
+/* Dark mode CSS (optional) */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #fffefe;
+    color: #fff;
+  }
+  input,
+  input:active,
+  select,
+  select:active {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: 10px;
+    background: transparent;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    color: black;
+    width: 90%;
+  
+    margin-bottom: 15px;
+  
+    font-size: 1em;
+    outline: none;
+    transition: border-color 0.2s ease;
+   
+  }
+}
+
+/* Additional styles for a more attractive form */
+
+
+input,
+select,
+button {
+  transition: all 0.3s ease;
+}
+
+input:focus,
+select:focus {
+  border-color: #169f63;
+  box-shadow: 0 0 8px rgba(47, 218, 110, 0.5);
+}
+
+button:hover {
+  background-color: #0f8f58;
+  transform: scale(1.05);
+}

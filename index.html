@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico">
+    
+
+</head>
+<body>
+    <header>
+        <h4>Get your certificate</h4>
+    </header>
+    <main>
+        <form id="certificateForm" action="http://localhost:3000/auth" method="POST">
+          
+            <img
+            src="https://hopingminds.com/wp-content/uploads/2023/01/Asset-5.png"
+            alt="Hoping Minds"
+            class="logo"
+            style="height: 70px; width: 150px; margin-bottom: 20px;;"
+          />
+                <input required type="text" name="name" autocomplete="name" placeholder="Your Name" id="name" minlength="3" maxlength="16">
+                <label for="email">Type Your Email</label>
+                <input required type="email" name="email" autocomplete="email" placeholder="Your Email" id="email">
+                <label for="course">Select Course</label>
+                <select id="course" name="selectedCourse" required>
+                    <option value="" disabled selected>Select Course</option>
+                    <option value="AWS">AWS</option>
+                    <option value="Data Science">Data Science</option>
+                    <option value="Full Stack Development">Full Stack Development</option>
+                </select>
+                <label for="date">Date</label>
+                <input name="selectedDate" type="date" id="date" required>
+                <button id="submitBtn">Get Certificate</button>
+          
+        </form>
+    </main>
+    <script src="https://unpkg.com/pdf-lib@1.4.0"></script>
+    <script src="./FileSaver.js"></script>
+    <script src="https://unpkg.com/@pdf-lib/fontkit@0.0.4"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
